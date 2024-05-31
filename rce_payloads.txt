@@ -1,0 +1,20 @@
+| ls
+| whoami
+| cat /etc/passwd
+; ls
+; whoami
+; cat /etc/passwd
+&& ls
+&& whoami
+&& cat /etc/passwd
+| id
+; id
+&& id
+| pwd
+; pwd
+&& pwd
+| uname -a
+; uname -a
+&& uname -a
+| ps
+;
