@@ -46,6 +46,16 @@ def csrf_scan(url):
     print("Scanning for CSRF vulnerabilities...")
     scan_vulnerability(url, payloads, 'action')
 
+def lfi_scan(url):
+    payloads = load_payloads('lfi_payloads.txt')
+    print("Scanning for LFI vulnerabilities...")
+    scan_vulnerability(url, payloads, 'page')
+
+def cmd_injection_scan(url):
+    payloads = load_payloads('cmd_injection_payloads.txt')
+    print("Scanning for Command Injection vulnerabilities...")
+    scan_vulnerability(url, payloads, 'cmd')
+
 def main():
     url = input("Enter the target URL: ")
     sql_injection_scan(url)
@@ -53,6 +63,8 @@ def main():
     dir_traversal_scan(url)
     rce_scan(url)
     csrf_scan(url)
+    lfi_scan(url)
+    cmd_injection_scan(url)
 
 if __name__ == "__main__":
     main()
