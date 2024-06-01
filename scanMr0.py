@@ -56,6 +56,26 @@ def cmd_injection_scan(url):
     print("Scanning for Command Injection vulnerabilities...")
     scan_vulnerability(url, payloads, 'cmd')
 
+def open_redirect_scan(url):
+    payloads = load_payloads('open_redirect_payloads.txt')
+    print("Scanning for Open Redirect vulnerabilities...")
+    scan_vulnerability(url, payloads, 'url')
+
+def rfi_scan(url):
+    payloads = load_payloads('rfi_payloads.txt')
+    print("Scanning for Remote File Inclusion vulnerabilities...")
+    scan_vulnerability(url, payloads, 'file')
+
+def ssrf_scan(url):
+    payloads = load_payloads('ssrf_payloads.txt')
+    print("Scanning for SSRF vulnerabilities...")
+    scan_vulnerability(url, payloads, 'url')
+
+def path_traversal_scan(url):
+    payloads = load_payloads('path_traversal_payloads.txt')
+    print("Scanning for Path Traversal vulnerabilities...")
+    scan_vulnerability(url, payloads, 'path')
+
 def main():
     url = input("Enter the target URL: ")
     sql_injection_scan(url)
@@ -65,6 +85,10 @@ def main():
     csrf_scan(url)
     lfi_scan(url)
     cmd_injection_scan(url)
+    open_redirect_scan(url)
+    rfi_scan(url)
+    ssrf_scan(url)
+    path_traversal_scan(url)
 
 if __name__ == "__main__":
     main()
