@@ -1,0 +1,10 @@
+http://evil.com
+//evil.com
+https://evil.com
+%2Fevil.com
+/%5Cevil.com
+//%5Cevil.com
+/%252Fevil.com
+//%252Fevil.com
+http://evil.com/
+https://evil.com/
